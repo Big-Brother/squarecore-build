@@ -14,7 +14,7 @@ and use and require in your gulp file:
 
 ```javascript
 var gulp = require('gulp');
-var squarecoreTasks = require('squarecore-build');
+var squarecoreTasks = require('@big-brother/squarecore-build');
 
 squarecoreTasks('submodule');
 gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
@@ -25,7 +25,7 @@ gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
 * There's no default task to allow for each submodule to set up their own configuration
 * If the module is node-only, avoid adding the browser tasks with:
 ```javascript
-var squarecoreTasks = require('squarecore-build');
+var squarecoreTasks = require('@big-brother/squarecore-build');
 squarecoreTasks('submodule', {skipBrowsers: true});
 ```
 
