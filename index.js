@@ -17,8 +17,8 @@
  * </ul>`
  * <li> `browser` - generate files needed for browser (browserify)
  * <ul>
- * <li> `browser:uncompressed` - build uncomprssed browser bundle (`bitcore-*.js`)
- * <li> `browser:compressed` - build compressed browser bundle (`bitcore-*.min.js`)
+ * <li> `browser:uncompressed` - build uncomprssed browser bundle (`squarecore-*.js`)
+ * <li> `browser:compressed` - build compressed browser bundle (`squarecore-*.min.js`)
  * <li> `browser:maketests` - build `tests.js`, needed for testing without karma
  * </ul>`
  * <li> `lint` - run `jshint`
@@ -54,7 +54,7 @@ function startGulp(name, opts) {
 
   opts = opts || {};
   var browser = !opts.skipBrowser;
-  var fullname = name ? 'bitcore-' + name : 'bitcore';
+  var fullname = name ? 'squarecore-' + name : 'squarecore';
   var files = ['lib/**/*.js'];
   var tests = ['test/**/*.js'];
   var alljs = files.concat(tests);
